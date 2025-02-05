@@ -6,7 +6,7 @@ import { TasksService } from '../tasks.service';
 @Component({
   selector: 'app-new-task',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule], // FormsModule is required for ngModel, bulit-in directive by Angular
   templateUrl: './new-task.component.html',
   styleUrl: './new-task.component.css',
 })
