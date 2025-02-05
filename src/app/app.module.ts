@@ -4,22 +4,21 @@ import { TasksComponent } from './tasks/tasks.component';
 import { HeaderComponent } from './header/header.component';
 import { UserComponent } from './user/user.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { CardComponent } from './shared/card/card.component';
 import { TaskComponent } from './tasks/task/task.component';
 import { NewTaskComponent } from './tasks/new-task/new-task.component';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from './shared/Shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     UserComponent,
-    CardComponent,
     TasksComponent,
     TaskComponent,
     NewTaskComponent,
   ], // declarations are components, directives, and pipes
-  imports: [BrowserModule, FormsModule], // can use for standardlone components
+  imports: [BrowserModule, FormsModule, SharedModule], // can use for standardlone components
   providers: [], // providers are services
   bootstrap: [AppComponent], // bootstrap is the root component
 })
